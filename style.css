@@ -22,6 +22,24 @@ html {
 	padding-right: 24px;
 	justify-content: space-between;
 }
+.header__link{
+height: 40px;
+}
+.header__burger-back,
+.header__search,
+.contact__call,
+.contact__chat,
+.contact__profile{
+	transition: opacity .2s;
+}
+.header__burger-back:hover,
+.header__search:hover,
+.contact__call:hover,
+.contact__chat:hover,
+.contact__profile:hover{
+	opacity: .8;
+	cursor: pointer;
+}
 .header__logo{
 	position: absolute;
 	left: 81px;
@@ -30,6 +48,7 @@ html {
 nav{
 	padding-top: 34px;
 	padding-left: 24px;
+	padding-bottom: 236px;
 }
 .list{
 	margin: 0;
@@ -41,14 +60,59 @@ margin-bottom: 32px;
 }
 
 .list__link{
+	width: auto;
 	text-decoration: none;
 	color: #1B1C21;
-	display: block;
 	font-weight: 500;
 	line-height: 24px;
+	transition: color .2s;
+}
+.list__link:hover{
+	color:#7E7E82;
 }
 
 .list__link--active{
 	color:#7E7E82;
 }
 
+
+
+.contact{
+	padding-left: 24px;
+	padding-bottom: 40px;
+}
+.contact__icons{
+display: flex;
+margin-bottom: 16px;
+}
+.contact__icons-link{
+	margin-right: 16px;
+	height: 40px;
+}
+.contact__mail{
+font-size: 16px;
+line-height: 24px;
+margin: 0;
+margin-bottom: 12px;
+}
+.contact__tel{
+	font-size: 24px;
+	line-height: 32px;
+	font-style: bold;
+	margin: 0;
+}
+.lang{
+	display: flex;
+	padding-left: 24px;
+	padding-bottom: 32px;
+}
+.lang__item{
+	font-size: 24px;
+	line-height: 16px;
+	text-transform: uppercase;
+	margin-right: 7px;
+	display: inline-block;
+}
+.lang__item--active{
+	color:#7E7E82;
+}

@@ -1,0 +1,48 @@
+html {
+	font-family: 'TT Lakes', Tahoma, sans-serif;
+	
+}
+/* *{
+	border: .1px solid;
+} */
+.container{
+	background-color: #F2F2F2;
+}
+
+.mobile-menu{
+	background-color: #fff;
+	width: 320px;
+	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+.header{
+	height: 86px;
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+	padding-right: 24px;
+	justify-content: space-between;
+}
+.header__logo{
+	position: absolute;
+	left: 81px;
+}
+
+nav{
+	padding-top: 34px;
+}
+.list{
+	margin: 0;
+	padding: 0;
+}
+.list__item{
+	list-style: none;
+
+}
+.list__link{
+	text-decoration: none;
+color: #1B1C21;
+display: block;
+font-weight: 500;
+line-height: 24px;
+}
+

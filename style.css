@@ -25,8 +25,12 @@ html {
 .header__link{
 height: 40px;
 }
+.header__link-logo{
+height: 51px;
+}
 .header__burger-back,
 .header__search,
+.header__link-logo,
 .contact__call,
 .contact__chat,
 .contact__profile{
@@ -34,6 +38,7 @@ height: 40px;
 }
 .header__burger-back:hover,
 .header__search:hover,
+.header__link-logo:hover,
 .contact__call:hover,
 .contact__chat:hover,
 .contact__profile:hover{
@@ -60,7 +65,9 @@ margin-bottom: 32px;
 }
 
 .list__link{
-	width: auto;
+	font-size: 16px;
+	display: inline-block;
+	line-height: 24px;
 	text-decoration: none;
 	color: #1B1C21;
 	font-weight: 500;
@@ -94,12 +101,24 @@ font-size: 16px;
 line-height: 24px;
 margin: 0;
 margin-bottom: 12px;
+display: block;
+text-decoration: none;
+color: #1B1C21;
+transition: color .2s;
 }
 .contact__tel{
+	display: block;
 	font-size: 24px;
 	line-height: 32px;
-	font-style: bold;
 	margin: 0;
+	text-decoration: none;
+	color: #1B1C21;
+	font-weight: bold;
+	transition: color .2s;
+}
+.contact__mail:hover,
+.contact__tel:hover{
+	color:#7E7E82;
 }
 .lang{
 	display: flex;
@@ -112,7 +131,11 @@ margin-bottom: 12px;
 	text-transform: uppercase;
 	margin-right: 7px;
 	display: inline-block;
+	text-decoration: none;
+	color: #1B1C21;
+	transition: color .2s;
 }
-.lang__item--active{
+.lang__item--active,
+.lang__item:hover{
 	color:#7E7E82;
 }

@@ -62,6 +62,22 @@
             </footer>
         </div>
     </div>
+    <script>
+        let items = document.querySelectorAll('.list__link');
+        for (let i = 0; i < items.length; i++) {
+            items[i].addEventListener('click', () => {
+                for (let i = 0; i < items.length; i++) {
+                    if (items[i].classList.contains('list__link--active')) {
+                        items[i].classList.remove('list__link--active')
+                    }
+
+                }
+                items[i].classList.add('list__link--active')
+            })
+
+        }
+        console.log(items);
+    </script>
 </body>
 
 </html>
